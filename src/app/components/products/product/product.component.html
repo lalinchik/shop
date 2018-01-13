@@ -5,9 +5,7 @@
     <span class="product-description">{{product.description}} ({{product.carClass}})</span>
     <h4 class="product-equivalents-title">Equivalents:</h4>
     <ul class="product-equivalents">
-        <li *ngFor="let equivalent of product.equivalents">
-            <a href="#" class="product-equivalent">{{equivalent}}</a>
-        </li>
+        <li *ngFor="let equivalent of product.equivalents">{{equivalent}}</li>
     </ul>
     <button type="button" class="btn primary-btn" (click)='onAddProduct()'>Add to cart</button>
 </div>

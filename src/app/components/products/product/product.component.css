@@ -49,3 +49,7 @@
     margin: 20px auto 0;
     padding: 10px 15px;
 }
+
+.primary-btn:hover {
+    cursor: pointer;
+}

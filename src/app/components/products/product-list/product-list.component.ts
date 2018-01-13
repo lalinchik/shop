@@ -10,9 +10,8 @@ import { CartService } from '../../cart/cart.service';
   styleUrls: ['./product-list.component.css']
 })
 
-export class ProductListComponentComponent implements OnInit {
+export class ProductListComponent implements OnInit {
   products: Array<Product>;
-  cartProducts: Array<Product>;
 
   constructor(public productsService: ProductsService,
               public cartService: CartService) {
@@ -20,10 +19,9 @@ export class ProductListComponentComponent implements OnInit {
 
   ngOnInit() {
     this.products = this.productsService.getProducts();
-    this.cartProducts = this.cartService.getProducts();
   }
 
   onAddProduct(product) {
-    this.cartProducts.push(product);
+    this.cartService.addProductToCart(product);
   }
 }

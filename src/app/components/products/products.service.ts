@@ -17,10 +17,6 @@ export class ProductsService {
   constructor() {
   }
 
-  getProduct(): Product {
-    return this.products[0];
-  }
-
   getProducts(): Array<Product> {
     return this.products;
   }
