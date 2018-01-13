@@ -1,5 +1,5 @@
-enum Category {
-  Supercar, Minivan, Microcar
+export enum Class {
+  D = 'D', E = 'E', S = 'S', SCC = 'SCC'
 }
 
 export class Product {
@@ -7,8 +7,8 @@ export class Product {
               public price: number,
               public description?: string,
               public isAvailable?: boolean,
-              // category?: Category,
-              // equivalents?: string[],
-  ) {
+              public image?: string,
+              public carClass?: Class,
+              public equivalents?: string[]) {
   }
 }

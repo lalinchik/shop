@@ -1,0 +1,15 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-list-title {
+    text-transform: uppercase;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+app-product {
+    margin: 0 0 20px;
+}

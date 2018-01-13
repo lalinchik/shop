@@ -1,5 +1,8 @@
-<app-product
-        *ngFor="let product of products"
-        [product]="product"
-(addProduct)="onAddProduct($event)">
-</app-product>
+<div class="product-list">
+    <h2 class="product-list-title">Our products</h2>
+    <app-product
+            *ngFor="let product of products"
+            [product]="product"
+            (addProduct)="onAddProduct($event)">
+    </app-product>
+</div>

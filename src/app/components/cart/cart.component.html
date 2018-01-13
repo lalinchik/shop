@@ -1,7 +1,17 @@
 <div class="cart">
-    <h2>Cart</h2>
-    <app-product
-            *ngFor="let product of cartProducts"
-            [product]="product">
-    </app-product>
+    <table>
+        <caption>Cart</caption>
+        <tr>
+        <th>Name</th>
+        <th>Price</th>
+        </tr>
+        <tr *ngFor="let product of cartProducts">
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+        </tr>
+        <tr>
+            <td>Full amount</td>
+            <td>{{fullAmount}}</td>
+        </tr>
+    </table>
 </div>
