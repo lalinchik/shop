@@ -1,6 +1,21 @@
 # Shop
+This is an example project to show an implementation of a fancy, responsive, cross browser compatible (IE11) shop webapp made on Angular 5.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+##Features
+
+- See information about products
+- Add products to the shopping cart
+
+##Installation
+
+Clone the project
+
+`git clone https://github.com/lalinchik/shop`
+
+Install npm dependencies inside the project folder
+
+`cd shop`
+`npm install`
 
 ## Development server
 
