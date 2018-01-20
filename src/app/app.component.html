@@ -1,6 +1,5 @@
-<button type="button" class="primary-btn" (click)="onBuy()">Buy</button>
 <app-product-list></app-product-list>
-<app-cart
+<app-cart-list
         [cartProducts]="cartProducts"
         *ngIf="cartProducts.length">
-</app-cart>
+</app-cart-list>

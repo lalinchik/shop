@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 
 import { Product } from './components/products/products.model';
-import { CartService } from './components/cart/cart.service';
+import { CartService } from './components/carts/carts.service';
 
 @Component({
   selector: 'app-root',
@@ -28,9 +28,5 @@ export class AppComponent implements OnInit, OnDestroy {
     if (this.cartProductsSubscription) {
       this.cartProductsSubscription.unsubscribe();
     }
-  }
-
-  onBuy(): void {
-    console.log('Product was purchased');
   }
 }
