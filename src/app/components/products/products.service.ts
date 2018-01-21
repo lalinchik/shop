@@ -40,6 +40,6 @@ export class ProductsService {
     const index = this.products.findIndex(el => el.name === product.name);
     const quantity = ++this.products[index].quantity;
 
-    return [...this.products.slice(0, index), new Product(product.name, product.price, quantity,), ...this.products.slice(index + 1)];
+    return [...this.products.slice(0, index), new Product(product.name, product.price, quantity), ...this.products.slice(index + 1)];
   }
 }
