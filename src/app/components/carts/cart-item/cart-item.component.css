@@ -1,0 +1,38 @@
+.cart-item > span{
+    display: inline-block;
+    width: 175px;
+    padding: 15px 0;
+    text-align: center;
+}
+.cart-item-quantity{
+    width: 15px;
+    padding: 6px;
+    text-align: center;
+}
+
+.cart-item-mine,
+.cart-item-plus{
+    padding: 0 5px;
+    color: grey;
+    cursor: pointer;
+}
+
+.cart-item-mine:hover,
+.cart-item-plus:hover{
+    color: darkblue;
+    cursor: pointer;
+    user-select: none;
+}
+
+.disable,
+.disable:hover{
+    color: lightgray;
+}
+
+.cart-item .cart-item-delete {
+    width: 22px;
+    background: url("http://www.desotoks.us/images/trash-recyclebin-empty-closed.png?crc=4165515174") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    cursor: pointer;
+}

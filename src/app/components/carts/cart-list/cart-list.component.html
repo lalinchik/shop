@@ -1,0 +1,19 @@
+<div class="cart">
+    <div>
+        <h2>Cart</h2>
+        <div class="cart-title">
+            <span class="cart-name">Name</span>
+            <span class="cart-quantity">Quantity</span>
+            <span class="cart-price">Price</span>
+            <span>Total</span>
+        </div>
+        <app-cart-item
+                *ngFor="let cartItem of cartProducts"
+                [cartItem]="cartItem"
+                class="app-cart-item"></app-cart-item>
+        <div class="cart-full-amount">
+            <span>Full amount</span>
+            <span class="cart-amount">{{fullAmount | currency}}</span>
+        </div>
+    </div>
+</div>
